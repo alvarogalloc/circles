@@ -6,9 +6,8 @@ Circle = setmetatable({}, {
   end,
 })
 
-function Circle.new(radius, color, mode, body)
+function Circle.new(color, mode, body)
   local self = setmetatable({}, Circle)
-  self.radius = radius or 0
   self.color = color or { 0, 0, 0 }
   self.mode = mode or 'fill'
   self.body = body or Body:new()
